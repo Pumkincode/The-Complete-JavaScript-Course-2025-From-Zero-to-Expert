@@ -172,7 +172,7 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's!(${BMIMark}) !`);
 }
-*/
+
 //Type Conversion and Coercion
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
@@ -192,3 +192,6 @@ console.log("23" / "2");
 let n = "1" + 1; // '11'
 n = n - 1;
 console.log(n);
+*/
+//logical operators
+const hasDriversLicense = true; // A
