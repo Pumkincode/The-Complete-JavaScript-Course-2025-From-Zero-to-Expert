@@ -192,6 +192,115 @@ console.log("23" / "2");
 let n = "1" + 1; // '11'
 n = n - 1;
 console.log(n);
-*/
+
 //logical operators
 const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+
+// if(hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive!");
+// }else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false; // C
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive!");
+}else{
+  console.log("Someone else should drive...");
+}
+const scoreDolphins =(96 + 108 +89) / 3;
+const scoreKoalas =(88 + 91 + 110) /3;
+
+console.log(scoreDolphins, scoreKoalas);
+
+if(scoreDolphins > scoreKoalas){
+    console.log("Dolphins win the trophy")
+}else if(scoreDolphins < scoreKoalas ){
+     console.log("Koalas win the trophy")
+} else if(scoreDolphins || scoreKoalas){
+     console.log("Both win the trophy")}
+
+// switch statement
+
+const day = "monday";
+
+switch (day) {
+  case "monday": //day === 'monday'
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;  
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend :D");
+    break;
+  default:
+    console.log("Not a valid day!");
+} 
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+}   
+else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend :D");
+} else {
+  console.log("Not a valid day!");
+}
+  
+// Statements and Expressions
+// Expression: a piece of code that produces a value
+// Statement: a piece of code that performs an action
+// Example of an expression: 3 + 4, 'Hello World', true && false
+// Example of a statement: if (3 + 4 > 5) { console.log('Hello'); }
+//Declarations: a statement that defines a variable
+//Expressions can be part of a statement, but statements cannot be part of an expression
+// Example of a declaration: let age = 30;
+const me = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old ${me}`); 
+*
+
+const age = 23;
+//age >= 18 ? console.log("I like to drink wine 🍷")
+// : console.log("I like to drink water 💧");
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine 🍷';
+} else {
+  drink2 = 'water 💧';
+}     
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
+// WINDOWS + = OPEN EMOJI PANEL
+const bill = 275;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value is ${
+    bill + tip
+  }`
+);
+*/
